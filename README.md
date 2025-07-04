@@ -107,32 +107,6 @@ Additional requirements:
 
 ---
 
-### ▶️ Running the Project
-
-#### 🔹 1. Vision-based Lane Detection
-```bash
-python vision/lane_detection.py
-```
-
-#### 🔹 2. Deep Learning Model Training
-```bash
-python models/train_cnn_model.py
-```
-
-#### 🔹 3. Deep Learning Inference (Real-Time in ETS2)
-```bash
-python models/test_cnn_model.py
-```
-
-#### 🔹 4. Reinforcement Learning in CARLA
-Make sure CARLA server is running:
-```bash
-./CarlaUE4.sh  # or CarlaUE4.exe
-python carla_rl/train_dqn.py
-python carla_rl/evaluate_agent.py
-```
-
----
 
 ## 📊 Results and Observations
 
@@ -169,16 +143,6 @@ python carla_rl/evaluate_agent.py
 - Simulate **multi-camera setups** with front and rear views  
 - Integrate with **ROS** for potential real-world hardware testing
 
----
-
-## 📎 Project Citation (for Resume)
-
-**Autonomous Driving System for Trucks | Python, CARLA, TensorFlow, PyTorch, Git**  
-📅 March 2025 – May 2025  
-• Developed and compared three autonomous driving approaches—Reinforcement Learning (DQN in CARLA), Computer Vision, and Deep Learning in Euro Truck Simulator 2.  
-• Implemented real-time lane detection and steering control using Canny Edge Detection, Hough Transform, and CNNs.  
-• Integrated control system with live Euro Truck Simulator 2 gameplay.  
-• GitHub: [github.com/hevardhan/AFT](https://github.com/hevardhan/AFT)
 
 ---
 
