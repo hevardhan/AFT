@@ -57,15 +57,37 @@ Used for reinforcement learning:
 ## 📂 Repository Structure
 
 ```
-/
-├── data/               # Collected driving footage and labels from ETS2
-├── carla_rl/           # DQN implementation using CARLA simulator
-├── vision/             # Classical CV lane detection scripts
-├── models/             # CNN models for ETS2 (train/test)
-├── utils/              # Supporting scripts for steering, preprocessing
-├── gta/                # Sentdex-based GTA-V code (initial learning only)
+AFT/
+├── GTA/                   # Legacy learning code adapted from Sentdex (GTA-V based)
+│   ├── model/             # Trained models (AlexNet)
+│   ├── log/               # TensorBoard logs from GTA training
+│   ├── Tutorial Codes/    # Tutorial scripts from the learning phase
+│   ├── *.py               # Core training, testing, screen grabbing, key control scripts
+│   └── README.md
+│
+├── ONLY CV/               # Computer Vision-based steering (OpenCV techniques)
+│   ├── Tutorial Codes/    # Step-by-step scripts for vision-based driving
+│   ├── *.py               # Vision and YOLO-based scripts for ETS2
+│   └── README.md
+│
+├── RL/                    # Reinforcement Learning setup (CARLA environment)
+│   ├── logs/              # TensorBoard logs of RL training
+│   ├── models/            # Saved DQN/Xception-based RL models
+│   ├── train.py           # Training script
+│   └── use.py             # Inference script
+│
+├── Others/                # Experimental or miscellaneous test scripts
+│   ├── main.py
+│   └── main2.py
+│
+├── .gitignore
+├── README.md
 ├── requirements.txt
-└── README.md
+├── data.py                # Data utilities
+├── stuff.py               # Utility code / config
+├── Telemetry.py           # Interface for ETS2 telemetry
+├── yolov8n-seg.pt         # YOLOv8 segmentation model
+
 ```
 
 ---
